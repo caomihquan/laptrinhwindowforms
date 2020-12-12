@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.model
+namespace QLSV.model
 {
     public class Lop
     {
