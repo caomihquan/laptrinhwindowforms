@@ -117,6 +117,7 @@
             this.btnSinhvien.TabIndex = 9;
             this.btnSinhvien.Text = "Sinh Viên";
             this.btnSinhvien.UseVisualStyleBackColor = true;
+            this.btnSinhvien.Click += new System.EventHandler(this.btnSinhvien_Click);
             // 
             // btnLop
             // 

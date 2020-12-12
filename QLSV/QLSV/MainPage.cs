@@ -28,5 +28,11 @@ namespace QLSV
             Lop formlop = new Lop();
             formlop.ShowDialog();
         }
+
+        private void btnSinhvien_Click(object sender, EventArgs e)
+        {
+            SinhVien formsinhvien = new SinhVien();
+            formsinhvien.ShowDialog();
+        }
     }
 }

@@ -32,5 +32,17 @@ namespace QLSV
             ReadLop(1);
             excel.Quit();
         }
+        private static void ReadKhoa(int i)
+        {
+
+        }
+        private static void ReadSV(int i)
+        {
+
+        }
+        private static void ReadLop(int i)
+        {
+
+        }
     }
 }
