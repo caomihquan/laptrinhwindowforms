@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvLop = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,28 +60,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Lớp";
             // 
-            // dataGridView1
+            // dgvLop
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(883, 371);
-            this.dataGridView1.TabIndex = 21;
+            this.dgvLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLop.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvLop.Location = new System.Drawing.Point(0, 139);
+            this.dgvLop.Name = "dgvLop";
+            this.dgvLop.RowTemplate.Height = 24;
+            this.dgvLop.Size = new System.Drawing.Size(883, 329);
+            this.dgvLop.TabIndex = 22;
             // 
             // Lop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 468);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvLop);
             this.Controls.Add(this.panel1);
             this.Name = "Lop";
             this.Text = "Lop";
+            this.Load += new System.EventHandler(this.Lop_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -90,6 +91,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLop;
     }
 }

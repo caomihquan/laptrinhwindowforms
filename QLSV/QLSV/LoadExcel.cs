@@ -32,7 +32,21 @@ namespace QLSV
             ReadLop(1);
             excel.Quit();
         }
-
+        private static void ReadKhoa(int i)
+        {
+            ws1 = wb.Worksheets[1];
+            i++;
+            Khoa khoa;
+            while (ws1.Cells[i, 1].Value != null)
+            {
+                khoa = new Khoa();
+                khoa.MaKhoa = ws1.Cells[i, 1].Value;
+                khoa.TenKhoa = ws1.Cells[i, 2].Value;
+                khoa.dsLop = new List<Lop>();
+                dsKhoa.Add(khoa);
+                ++i;
+            }
+        }
         private static void ReadLop(int i)
         {
             ws2 = wb.Worksheets[2];
@@ -65,21 +79,7 @@ namespace QLSV
             }
         }
 
-        private static void ReadKhoa(int i)
-        {
-            ws1 = wb.Worksheets[1];
-            i++;
-            Khoa khoa;
-            while (ws1.Cells[i, 1].Value != null)
-            {
-                khoa = new Khoa();
-                khoa.MaKhoa = ws1.Cells[i, 1].Value;
-                khoa.TenKhoa = ws1.Cells[i, 2].Value;
-                khoa.dsLop = new List<Lop>();
-                dsKhoa.Add(khoa);
-                ++i;
-            }
-        }
+        
 
         private static void ReadSV(int i)
         {

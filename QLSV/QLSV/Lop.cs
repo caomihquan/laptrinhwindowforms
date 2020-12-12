@@ -16,5 +16,15 @@ namespace QLSV
         {
             InitializeComponent();
         }
+
+        private void Lop_Load(object sender, EventArgs e)
+        {
+            dgvLop.DataSource = LoadExcel.dsLop;
+        }
+
+       
+    
+
+     
     }
 }
