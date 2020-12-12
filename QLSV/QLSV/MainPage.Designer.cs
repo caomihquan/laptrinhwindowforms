@@ -102,6 +102,7 @@
             this.btnKhoa.TabIndex = 10;
             this.btnKhoa.Text = "Khoa";
             this.btnKhoa.UseVisualStyleBackColor = true;
+            this.btnKhoa.Click += new System.EventHandler(this.btnKhoa_Click);
             // 
             // btnSinhvien
             // 
@@ -130,6 +131,7 @@
             this.btnLop.TabIndex = 11;
             this.btnLop.Text = "Lớp";
             this.btnLop.UseVisualStyleBackColor = true;
+            this.btnLop.Click += new System.EventHandler(this.btnLop_Click);
             // 
             // panel1
             // 
