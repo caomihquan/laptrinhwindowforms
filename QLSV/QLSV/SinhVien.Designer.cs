@@ -67,6 +67,7 @@
             this.btnThem.TabIndex = 13;
             this.btnThem.Text = "Thêm Sinh viên";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 

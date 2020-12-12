@@ -11,6 +11,26 @@ namespace QLSV
 {
     class LoadExcel
     {
-        public static List<SinhVien> dsSinhVien { get; set; }
+        static string path = @"Database.xlsx";
+        static _Application excel = new _Excel.Application();
+        static Workbook wb;
+        static Worksheet ws;
+        static Worksheet ws1;
+        static Worksheet ws2;
+        public static List<SinhVien> dsSinhVien;
+        public static List<Khoa> dsKhoa;
+        public static List<Lop> dsLop;
+        static LoadExcel()
+        {
+            wb = excel.Workbooks.Open(AppDomain.CurrentDomain.BaseDirectory + path);
+            dsSinhVien = new List<SinhVien>();
+            dsKhoa = new List<Khoa>();
+            dsLop = new List<Lop>();
+
+            ReadKhoa(1);
+            ReadSV(1);
+            ReadLop(1);
+            excel.Quit();
+        }
     }
 }
