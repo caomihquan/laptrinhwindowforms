@@ -1,4 +1,4 @@
-﻿namespace Project
+﻿namespace QLSV
 {
     partial class dangnhap
     {

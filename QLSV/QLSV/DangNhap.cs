@@ -9,11 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Project.model;
 
-namespace Project
+namespace QLSV
 {
     public partial class dangnhap : Form
     {
-       
+        public dangnhap()
+        {
+            InitializeComponent();
+        }
+        List<SinhVien> dsSV;
+        private void dangnhap_Load(object sender, EventArgs e)
+        {
+            dsSV = LoadExcel.dsSinhVien;
+
+        }
 
         private void btndangnhap_Click(object sender, EventArgs e)
         {
