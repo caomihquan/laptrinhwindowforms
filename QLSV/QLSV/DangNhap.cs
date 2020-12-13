@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QLSV.model;
+using QLSV;
 
 namespace QLSV
 {
@@ -47,6 +47,11 @@ namespace QLSV
             txttaikhoan.Text = "";
             if (checkDN == false)
                 MessageBox.Show("Sai TK or MK");
+        }
+
+        private void btndangnhap_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

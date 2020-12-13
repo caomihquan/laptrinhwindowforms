@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKhoa = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoa)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,28 +61,29 @@
             this.label1.Text = "Khoa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // dgvKhoa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(813, 368);
-            this.dataGridView1.TabIndex = 21;
+            this.dgvKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhoa.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvKhoa.Location = new System.Drawing.Point(0, 146);
+            this.dgvKhoa.Name = "dgvKhoa";
+            this.dgvKhoa.RowTemplate.Height = 24;
+            this.dgvKhoa.Size = new System.Drawing.Size(813, 319);
+            this.dgvKhoa.TabIndex = 21;
             // 
             // Khoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 465);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvKhoa);
             this.Controls.Add(this.panel1);
             this.Name = "Khoa";
             this.Text = "Khoa";
+            this.Load += new System.EventHandler(this.Khoa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -91,6 +92,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKhoa;
     }
 }

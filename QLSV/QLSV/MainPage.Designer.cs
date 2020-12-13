@@ -95,7 +95,7 @@
             this.btnKhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhoa.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhoa.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnKhoa.Location = new System.Drawing.Point(0, 169);
+            this.btnKhoa.Location = new System.Drawing.Point(14, 169);
             this.btnKhoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnKhoa.Name = "btnKhoa";
             this.btnKhoa.Size = new System.Drawing.Size(150, 70);
@@ -110,7 +110,7 @@
             this.btnSinhvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSinhvien.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSinhvien.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnSinhvien.Location = new System.Drawing.Point(0, 74);
+            this.btnSinhvien.Location = new System.Drawing.Point(14, 77);
             this.btnSinhvien.Margin = new System.Windows.Forms.Padding(2);
             this.btnSinhvien.Name = "btnSinhvien";
             this.btnSinhvien.Size = new System.Drawing.Size(150, 70);
@@ -125,7 +125,7 @@
             this.btnLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLop.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLop.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnLop.Location = new System.Drawing.Point(2, 263);
+            this.btnLop.Location = new System.Drawing.Point(11, 252);
             this.btnLop.Margin = new System.Windows.Forms.Padding(2);
             this.btnLop.Name = "btnLop";
             this.btnLop.Size = new System.Drawing.Size(148, 70);
@@ -163,6 +163,7 @@
             this.btnDangxuat.TabIndex = 17;
             this.btnDangxuat.Text = "Đăng Xuất";
             this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // panel2
             // 

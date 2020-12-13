@@ -21,5 +21,10 @@ namespace QLSV
         {
 
         }
+
+        private void Khoa_Load(object sender, EventArgs e)
+        {
+            dgvKhoa.DataSource = LoadExcel.dsKhoa;
+        }
     }
 }

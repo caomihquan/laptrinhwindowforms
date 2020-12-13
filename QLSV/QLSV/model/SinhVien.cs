@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLSV.model
+namespace QLSV
 {
     public class SinhVien
     {
-        public string MSSV { get; set; }
+        public string  MSSV { get; set; }
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string GioiTinh { get; set; }

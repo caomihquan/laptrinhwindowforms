@@ -34,5 +34,12 @@ namespace QLSV
             SinhVien formsinhvien = new SinhVien();
             formsinhvien.ShowDialog();
         }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            dangnhap dangnhap = new dangnhap();
+            dangnhap.ShowDialog();
+        }
     }
 }

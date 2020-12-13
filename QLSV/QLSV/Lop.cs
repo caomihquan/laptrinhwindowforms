@@ -22,6 +22,11 @@ namespace QLSV
             dgvLop.DataSource = LoadExcel.dsLop;
         }
 
+        private void dgvLop_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
        
     
 

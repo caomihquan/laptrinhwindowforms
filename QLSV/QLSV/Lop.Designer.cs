@@ -69,6 +69,7 @@
             this.dgvLop.RowTemplate.Height = 24;
             this.dgvLop.Size = new System.Drawing.Size(883, 329);
             this.dgvLop.TabIndex = 22;
+            this.dgvLop.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLop_CellContentClick);
             // 
             // Lop
             // 
