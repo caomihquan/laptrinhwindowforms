@@ -86,6 +86,7 @@
             this.txttaikhoan.Name = "txttaikhoan";
             this.txttaikhoan.Size = new System.Drawing.Size(202, 24);
             this.txttaikhoan.TabIndex = 47;
+            this.txttaikhoan.TextChanged += new System.EventHandler(this.txttaikhoan_TextChanged);
             // 
             // lblthoat
             // 
@@ -97,6 +98,7 @@
             this.lblthoat.Size = new System.Drawing.Size(48, 16);
             this.lblthoat.TabIndex = 46;
             this.lblthoat.Text = "Thoát";
+            this.lblthoat.Click += new System.EventHandler(this.lblthoat_Click);
             // 
             // panel2
             // 

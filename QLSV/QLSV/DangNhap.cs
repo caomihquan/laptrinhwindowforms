@@ -25,7 +25,9 @@ namespace QLSV
 
         }
 
-        private void btndangnhap_Click(object sender, EventArgs e)
+      
+
+        private void btndangnhap_Click_1(object sender, EventArgs e)
         {
             bool checkDN = false;
             if (!String.IsNullOrEmpty(txttaikhoan.Text) || !String.IsNullOrEmpty(txtmatkhau.Text))
@@ -50,7 +52,14 @@ namespace QLSV
                 MessageBox.Show("Sai TK or MK");
         }
 
-        private void btndangnhap_Click_1(object sender, EventArgs e)
+        private void lblthoat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có chắc muốn thoát không?",
+                "Error", MessageBoxButtons.YesNoCancel);
+            Application.Exit();
+        }
+
+        private void txttaikhoan_TextChanged(object sender, EventArgs e)
         {
 
         }
