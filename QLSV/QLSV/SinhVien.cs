@@ -32,5 +32,10 @@ namespace QLSV
             ThemSV themsv = new ThemSV();
             themsv.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -43,20 +43,19 @@
             this.panel1.Font = new System.Drawing.Font("Bauhaus 93", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(813, 90);
+            this.panel1.Size = new System.Drawing.Size(610, 73);
             this.panel1.TabIndex = 20;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(299, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(224, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(173, 68);
+            this.label1.Size = new System.Drawing.Size(139, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "Khoa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -65,19 +64,23 @@
             // 
             this.dgvKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhoa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvKhoa.Location = new System.Drawing.Point(0, 146);
+            this.dgvKhoa.Location = new System.Drawing.Point(0, 78);
+            this.dgvKhoa.Margin = new System.Windows.Forms.Padding(2);
             this.dgvKhoa.Name = "dgvKhoa";
             this.dgvKhoa.RowTemplate.Height = 24;
-            this.dgvKhoa.Size = new System.Drawing.Size(813, 319);
+            this.dgvKhoa.Size = new System.Drawing.Size(610, 300);
             this.dgvKhoa.TabIndex = 21;
             // 
             // Khoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 465);
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(610, 378);
             this.Controls.Add(this.dgvKhoa);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Khoa";
             this.Text = "Khoa";
             this.Load += new System.EventHandler(this.Khoa_Load);
