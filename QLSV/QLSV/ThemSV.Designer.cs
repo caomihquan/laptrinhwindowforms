@@ -185,6 +185,7 @@
             this.btnThoat.TabIndex = 48;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnThem
             // 
@@ -200,6 +201,7 @@
             this.btnThem.TabIndex = 47;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // cmbLop
             // 
@@ -218,6 +220,7 @@
             this.cmbKhoa.Name = "cmbKhoa";
             this.cmbKhoa.Size = new System.Drawing.Size(219, 24);
             this.cmbKhoa.TabIndex = 45;
+            this.cmbKhoa.SelectedIndexChanged += new System.EventHandler(this.cmbKhoa_SelectedIndexChanged);
             // 
             // dtpNgaySinh
             // 
@@ -247,6 +250,7 @@
             this.cmbGioiTinh.Name = "cmbGioiTinh";
             this.cmbGioiTinh.Size = new System.Drawing.Size(219, 24);
             this.cmbGioiTinh.TabIndex = 42;
+            this.cmbGioiTinh.SelectedIndexChanged += new System.EventHandler(this.cmbGioiTinh_SelectedIndexChanged);
             // 
             // ThemSV
             // 
@@ -272,6 +276,7 @@
             this.Controls.Add(this.cmbGioiTinh);
             this.Name = "ThemSV";
             this.Text = "ThemSV";
+            this.Load += new System.EventHandler(this.ThemSV_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
